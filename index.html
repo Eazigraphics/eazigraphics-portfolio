@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eazi Graphics — The Design Oracle</title>
+<meta name="description" content="Eazi Graphics — visual design for brands, campaigns, Web3 and ideas that need attention.">
+<style>
+:root{
+  --bg:#0a0a0b; --bg2:#111214; --card:#151619; --line:#2a2b2f;
+  --text:#f5f3ef; --muted:#a6a39d; --orange:#ff6a00; --soft:#ff8e42;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:auto}
+.container{width:min(1180px,calc(100% - 40px));margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(10,10,11,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;letter-spacing:-.7px;font-size:21px}
+.brand span{color:var(--orange)}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}
+.navlinks a:hover{color:#fff}
+.hero{min-height:78vh;display:flex;align-items:end;padding:90px 0 70px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:520px;height:520px;right:-160px;top:-90px;background:radial-gradient(circle,rgba(255,106,0,.18),transparent 68%);filter:blur(10px);pointer-events:none}
+.kicker{color:var(--orange);font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase}
+h1{font-size:clamp(52px,9vw,112px);line-height:.91;letter-spacing:-5px;max-width:950px;margin:18px 0 26px}
+.hero p{max-width:650px;font-size:18px;line-height:1.6;color:var(--muted);margin:0}
+.cta{display:inline-flex;gap:10px;align-items:center;margin-top:30px;background:var(--orange);color:#111;font-weight:900;padding:14px 18px;border-radius:999px}
+.section{padding:90px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}
+.eyebrow{font-size:11px;letter-spacing:2px;color:var(--orange);font-weight:900;text-transform:uppercase}
+h2{font-size:44px;letter-spacing:-2px;margin:8px 0 0}
+.lead{color:var(--muted);max-width:520px;line-height:1.6}
+.grid{display:grid;grid-template-columns:1.35fr .65fr;gap:20px}
+.project{background:var(--card);border:1px solid var(--line);border-radius:28px;overflow:hidden}
+.project-copy{padding:22px 22px 24px}
+.project h3{margin:0;font-size:26px;letter-spacing:-1px}
+.project p{margin:9px 0 0;color:var(--muted);line-height:1.55}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{border:1px solid #3a3b40;border-radius:999px;padding:7px 10px;font-size:11px;color:#d0cdc7}
+.single img{aspect-ratio:4/5;object-fit:cover}
+.stable img{aspect-ratio:3/2;object-fit:cover}
+.case{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.case img{height:100%;object-fit:cover}
+.case .project-copy{padding:26px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.about p{color:var(--muted);font-size:18px;line-height:1.7;margin-top:0}
+.statement{font-size:34px;line-height:1.15;letter-spacing:-1.4px;font-weight:850}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:25px}
+.skill{border:1px solid var(--line);background:var(--card);padding:15px;border-radius:15px}
+.contact{background:linear-gradient(135deg,#171311,#101113);border:1px solid #3b2a20;border-radius:30px;padding:55px}
+.contact h2{font-size:56px;max-width:700px}
+.contact p{color:var(--muted);font-size:17px;max-width:600px;line-height:1.6}
+footer{padding:30px 0 50px;color:#777;font-size:13px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){
+ .navlinks{display:none}.hero{min-height:70vh;padding-top:65px}
+ .grid,.case,.about{grid-template-columns:1fr}
+ .section{padding:65px 0}.section-head{display:block} .lead{margin-top:12px}
+ h1{letter-spacing:-3px}.contact h2{font-size:40px}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#">Eazi<span> Graphics</span></a>
+    <nav class="navlinks">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Let's work</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="kicker">The Design Oracle</div>
+    <h1>Visuals that make ideas impossible to ignore.</h1>
+    <p>I design campaign graphics, brand visuals and digital experiences for brands that want to look clear, credible and memorable.</p>
+    <a class="cta" href="#work">Explore selected work ↘</a>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Selected work</div><h2>Made to communicate. Built to stand out.</h2></div>
+      <div class="lead">A focused selection of campaign design, visual identity and Web3 communication work.</div>
+    </div>
+
+    <div class="grid">
+      <article class="project single">
+        <img src="assets/asanko.png" alt="Asanko Gold Mine investment campaign design">
+        <div class="project-copy">
+          <h3>Asanko Gold Mine</h3>
+          <p>Investment campaign visual built around aspiration, wealth and lifestyle—turning a financial message into a visual story.</p>
+          <div class="tags"><span class="tag">Campaign Design</span><span class="tag">Financial Visual</span><span class="tag">Art Direction</span></div>
+        </div>
+      </article>
+
+      <article class="project stable">
+        <img src="assets/stablecoin.png" alt="Stablecoin ecosystem educational social design">
+        <div class="project-copy">
+          <h3>Stablecoin Ecosystem</h3>
+          <p>An educational social graphic designed to simplify a technical topic while keeping the visual language bold and approachable.</p>
+          <div class="tags"><span class="tag">Web3</span><span class="tag">Social Content</span><span class="tag">Information Design</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div style="height:20px"></div>
+
+    <div class="case">
+      <article class="project">
+        <img src="assets/argion-logo.png" alt="Argion Jewelry logo presentation">
+      </article>
+      <article class="project">
+        <div class="project-copy" style="padding-bottom:8px">
+          <div class="eyebrow">Case study — Argion Jewelry</div>
+          <h3>Building a jewelry identity from a letter and a diamond.</h3>
+          <p>The identity combines an architectural “A” with a diamond motif, creating a mark that feels structured, premium and directly connected to the category.</p>
+          <div class="tags"><span class="tag">Visual Identity</span><span class="tag">Brand Concept</span><span class="tag">Luxury</span></div>
+        </div>
+        <img src="assets/argion-case-study.png" alt="Argion Jewelry identity construction and rationale">
+      </article>
+    </div>
+
+    <div style="height:20px"></div>
+
+    <article class="project">
+      <img src="assets/argion-applications.png" alt="Argion Jewelry brand applications on fashion mannequins">
+      <div class="project-copy">
+        <div class="eyebrow">Identity in context</div>
+        <h3>From mark to world.</h3>
+        <p>Showing the Argion identity beyond the logo—translated into fashion and branded applications so the system feels like a living brand.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about">
+    <div>
+      <div class="eyebrow">About Eazi Graphics</div>
+      <div class="statement">I don't just make a graphic look good. I make the message land.</div>
+    </div>
+    <div>
+      <p>Eazi Graphics is a visual design practice focused on social campaigns, promotional graphics, brand visuals and digital-first communication.</p>
+      <p>The work balances strong composition with clear storytelling—especially for businesses, Web3 brands and campaigns that need attention without losing credibility.</p>
+      <div class="skills">
+        <div class="skill">Campaign visuals</div>
+        <div class="skill">Social media design</div>
+        <div class="skill">Brand identity</div>
+        <div class="skill">Web3 communication</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact">
+      <div class="eyebrow">Start a project</div>
+      <h2>Have something worth saying? Let's make it impossible to ignore.</h2>
+      <p>For design enquiries, campaigns, social content and visual identity work. Message directly on WhatsApp.</p>
+      <a class="cta" href="https://wa.me/2348102959884?text=Hi%20Eazi%20Graphics%2C%20I%27d%20like%20to%20work%20with%20you." target="_blank" rel="noopener">Chat on WhatsApp →</a>
+    </div>
+    <footer>
+      <span>© Eazi Graphics — The Design Oracle</span>
+      <span>Built around the work.</span>
+    </footer>
+  </div>
+</section>
+</main>
+
+<a class="wa-float" href="https://wa.me/2348102959884?text=Hi%20Eazi%20Graphics%2C%20I%27d%20like%20to%20work%20with%20you." target="_blank" rel="noopener" aria-label="Chat with Eazi Graphics on WhatsApp">
+  <span>◉</span> WhatsApp
+</a>
+<style>
+.wa-float{
+  position:fixed;right:22px;bottom:22px;z-index:50;
+  display:flex;align-items:center;gap:9px;
+  background:#25D366;color:#07110a;
+  font-weight:900;padding:13px 16px;border-radius:999px;
+  box-shadow:0 14px 34px rgba(0,0,0,.35);
+}
+.wa-float:hover{transform:translateY(-2px)}
+@media(max-width:650px){.wa-float{right:14px;bottom:14px}}
+</style>
+
+</body>
+</html>
