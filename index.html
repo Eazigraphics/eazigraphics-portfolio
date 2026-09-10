@@ -56,6 +56,10 @@ h2{font-size:44px;letter-spacing:-2px;margin:8px 0 0}
 .tag{border:1px solid #3a3b40;border-radius:999px;padding:7px 10px;font-size:11px;color:#d0cdc7}
 .single img{aspect-ratio:4/5;object-fit:cover}
 .stable img{aspect-ratio:3/2;object-fit:cover}
+.sola img{aspect-ratio:4/5;object-fit:cover;object-position:center}
+.featured-project{margin:20px 0}
+.featured-project .project-copy{padding:28px}
+.project-meta{display:flex;align-items:center;gap:10px;margin-bottom:10px;color:var(--orange);font-size:11px;font-weight:900;letter-spacing:1.6px;text-transform:uppercase}
 .case{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .case img{height:100%;object-fit:cover}
 .case .project-copy{padding:26px}
@@ -129,13 +133,13 @@ footer{padding:30px 0 50px;color:#777;font-size:13px;display:flex;justify-conten
   <div class="container nav-inner">
     <a class="brand" href="#">Eazi<span> Graphics</span></a>
     <nav class="navlinks">
-      <a href="#work">Work</a><a href="#founder">Founder</a><a href="#about">About</a><a href="#contact">Let's work</a>
+      <a href="#work">Work</a><a href="#about">About</a><a href="#founder">Founder</a><a href="#testimonials">Reviews</a><a href="#contact">Let's work</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
   </div>
   <div class="container">
     <nav class="mobile-menu" id="mobileMenu">
-      <a href="#work">Work</a><a href="#founder">Founder</a><a href="#about">About</a><a href="#contact">Let's work</a>
+      <a href="#work">Work</a><a href="#about">About</a><a href="#founder">Founder</a><a href="#testimonials">Reviews</a><a href="#contact">Let's work</a>
     </nav>
   </div>
 </header>
@@ -154,7 +158,7 @@ footer{padding:30px 0 50px;color:#777;font-size:13px;display:flex;justify-conten
   <div class="container">
     <div class="section-head">
       <div><div class="eyebrow">Selected work</div><h2>Made to communicate. Built to stand out.</h2></div>
-      <div class="lead">A focused selection of campaign design, visual identity and Web3 communication work.</div>
+      <div class="lead">A focused selection of campaign design, visual identity and digital communication—built around ideas, not decoration.</div>
     </div>
 
     <div class="grid">
@@ -182,6 +186,19 @@ footer{padding:30px 0 50px;color:#777;font-size:13px;display:flex;justify-conten
         </div>
       </article>
     </div>
+
+    <article class="project sola clickable featured-project" data-slideshow="sola" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open SOLA investment campaign slide deck">
+      <div class="thumb-wrap">
+        <img src="assets/sola-5.png" alt="SOLA Unlock South Africa's Next Investment Opportunity campaign visual">
+        <span class="view-badge">View full case study ↗</span>
+      </div>
+      <div class="project-copy">
+        <div class="project-meta">Independent concept campaign · SOLA</div>
+        <h3>Making investment opportunity feel clear, modern and worth exploring.</h3>
+        <p>SOLA is a conceptual investment campaign built around a simple challenge: financial opportunities can feel complex or too sales-driven. The solution was a focused visual journey that grabs attention, builds curiosity and communicates opportunity without overwhelming the viewer.</p>
+        <div class="tags"><span class="tag">Campaign Design</span><span class="tag">Financial Storytelling</span><span class="tag">Art Direction</span><span class="tag">Concept Development</span></div>
+      </div>
+    </article>
 
     <div style="height:20px"></div>
 
@@ -220,8 +237,8 @@ footer{padding:30px 0 50px;color:#777;font-size:13px;display:flex;justify-conten
       <div class="statement">We don't just make a graphic look good. We make the message land.</div>
     </div>
     <div>
-      <p>Eazi Graphics is a visual design practice focused on social campaigns, promotional graphics, brand visuals and digital-first communication.</p>
-      <p>The work balances strong composition with clear storytelling—especially for businesses, Web3 brands and campaigns that need attention without losing credibility.</p>
+      <p>Eazi Graphics is a visual design practice that helps brands turn ideas into clear, memorable and strategically directed visuals.</p>
+      <p>From campaign graphics and social content to brand identities and digital communication, the work balances strong composition with clear storytelling—helping brands look credible, communicate clearly and stay memorable.</p>
       <div class="skills">
         <div class="skill">Campaign visuals</div>
         <div class="skill">Social media design</div>
@@ -242,7 +259,7 @@ footer{padding:30px 0 50px;color:#777;font-size:13px;display:flex;justify-conten
         <div class="eyebrow">The person behind the work</div>
         <div class="founder-name">Olomo Isreal O.</div>
         <div class="founder-role">Founder &amp; Creative Director</div>
-        <p class="founder-bio">Design found me while I was searching for a skill worth building. What kept me here is simple: I want to help people say what they mean through visuals, and help businesses outshine their competition with premium design and sharp strategy.</p>
+        <p class="founder-bio">I help brands transform ideas into visuals people understand, remember and respond to. Design found me while I was searching for a skill worth building; what kept me here was discovering how powerful the right visual can be when it gives an idea clarity, confidence and presence.</p>
       </div>
     </div>
   </div>
@@ -280,7 +297,7 @@ footer{padding:30px 0 50px;color:#777;font-size:13px;display:flex;justify-conten
         </div>
       </div>
     </div>
-    <div class="testimonial-note">Send over more client quotes any time, and we'll keep this section growing.</div>
+    <div class="testimonial-note">A growing collection of feedback from clients and collaborators.</div>
   </div>
 </section>
 
@@ -420,6 +437,13 @@ footer{padding:30px 0 50px;color:#777;font-size:13px;display:flex;justify-conten
       title: "Asanko Gold Mine",
       slides: [
         "assets/asanko-1.png","assets/asanko-2.png","assets/asanko-3.png"
+      ]
+    },
+    sola: {
+      title: "SOLA — Investment Campaign Concept",
+      slides: [
+        "assets/sola-1.png","assets/sola-2.png","assets/sola-3.png",
+        "assets/sola-4.png","assets/sola-5.png","assets/sola-6.png"
       ]
     }
   };
